@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Navigation Bar</title>
+</head>
+<body>
+  <script>
+    // JavaScript code
+    const navbar = document.createElement('div');
+    navbar.style.backgroundColor = '#333';
+    navbar.style.color = '#fff';
+    navbar.style.display = 'flex';
+    navbar.style.justifyContent = 'space-evenly';
+    navbar.style.padding = '10px';
+    
+    const homeLink = document.createElement('a');
+    homeLink.setAttribute('href', '#');
+    homeLink.style.color = '#fff';
+    homeLink.style.textDecoration = 'none';
+    homeLink.style.margin = '0 10px';
+    homeLink.textContent = 'Home';
+
+    const contactLink = document.createElement('a');
+    contactLink.setAttribute('href', '#');
+    contactLink.style.color = '#fff';
+    contactLink.style.textDecoration = 'none';
+    contactLink.style.margin = '0 10px';
+    contactLink.textContent = 'ContactUs';
+    
+    const loginLink = document.createElement('a');
+    loginLink.setAttribute('href', '#');
+    loginLink.style.color = '#fff';
+    loginLink.style.textDecoration = 'none';
+    loginLink.style.margin = '0 10px';
+    loginLink.textContent = 'About';
+    
+    const registerLink = document.createElement('a');
+    registerLink.setAttribute('href', '#');
+    registerLink.style.color = '#fff';
+    registerLink.style.textDecoration = 'none';
+    registerLink.style.margin = '0 10px';
+    registerLink.textContent = 'Sign-In';
+    
+    
+    navbar.appendChild(homeLink);
+    navbar.appendChild(contactLink);
+    navbar.appendChild(loginLink);
+    navbar.appendChild(registerLink)
+    
+    document.body.appendChild(navbar);
+  </script>
+</body>
+</html>
